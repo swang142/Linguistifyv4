@@ -25,6 +25,7 @@ def get_tts():
         # file_path = os.path.join('/tmp', filename)
         # file.save(file_path) 
         # if we want to save to a file path lol
+        print("working")
 
         transcription = transcribe_audio(file, "en-us").to_dict()
         translated = translate_utterances(transcription, "FR")
